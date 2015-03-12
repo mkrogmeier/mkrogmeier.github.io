@@ -43,12 +43,19 @@ a:hover {
 	color: #aa0000;
 }
 
-#nav{
+article {
+	border-bottom: 1px solid #dddddd;
+	padding: 20px 0 40px 0;
+	display: block;
+	margin-bottom: 20px;
+}
+
+#nav {
 	display: block;
 	margin-left: 14px;
 	width: 720px;
-
 }
+
 .nav a {
 	color: #dddddd;
 }
@@ -56,14 +63,17 @@ a:hover {
 .nav a:hover {
 	color: black;
 }
+
 .date {
 	font-size: 20px;
 	color: #cccccc;
 }
+
 .title {
 	color: black;
 	font-size: 36;
 }
+
 .more-link {
 	float: right;
 	text-decoration: none;
@@ -78,11 +88,7 @@ a:hover {
 	width: 963px;
 	display: block;
 }
-.post {
-	border-bottom: 1px solid #dddddd;
-	padding: 20px 0 40px 0;
-	display: block;
-	margin-bottom: 20px;
+
 }
 #footer {
 	font-size: 12px;
