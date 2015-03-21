@@ -35,37 +35,47 @@ nav a:hover {
 }
 
 .social-nav {
-	min-height: 48px;
 	float: right;
+/*	width: 197px;
+	height: 97px;*/
+	display: block;
 }
 
-.social-nav a {
-	background: url("../images/socialNav.png") 0 -48px no-repeat;
+.social-nav li {
+	background: url("../images/socialNav.png") no-repeat;
 	min-width: 48px; 
 	min-height: 48px;
+	max-height: 48px;
+	max-width: 48px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	position: relative;
+	background-repeat: no-repeat;
 }
 
 .social-gplus a {
-	background: url("../images/socialNav.png") 0 0 no-repeat;
-	min-width: 48px; 
-	min-height: 48px;
+	background: url("../images/socialNav.png") no-repeat;
+	width: 48px; 
+	height: 48px;
+	background-position: -150px -48px;
+	display: block;
 }
 
 .social-twitter a {
-	background: url("../images/socialNav.png") 0 0 no-repeat;
-	min-width: 48px; 
-	min-height: 48px;
+	background: url("../images/socialNav.png") no-repeat;
+	background-position: -50px -97px;
 }
 
 .social-fb a { 
- 	background: url("../images/socialNav.png") 0 0 no-repeat;
+ 	background: url("../images/socialNav.png") no-repeat;
 	min-width: 48px; 
 	min-height: 48px;
  }
 
 .social-rss a {
- 	left: 0;
-	height: -48px;
+	min-width: 48px; 
+	min-height: 48px;
 }
 .social-gplus a:hover {
 	background-position: 0 -48px;
