@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<style>
+		#map {
+			width: 800px;
+			height: 600px;
+		}
+	</style>
+
+	<script>
+		window.onload = function () {
+
+			var latlng = new google.maps.LatLng(53.385873, -1.471471);
+
+			var styles = [
+				{
+					featureType: "landscape",
+					stylers: [
+						{ color: '#eeddee' }
+					]
+				},{
+					featureType: "natural",
+					stylers: [
+						{ hue: '#ff0000' }
+					]
+				},{
+					featureType: "road",
+					stylers: [
+						{ hue: '#5500aa' },
+						{ saturation: -70 }
+					]
+				},{
+					featureType: "building",
+					elementType: "labels",
+					stylers: [
+						{ hue: '#000066' }
+					]
+				},{
+					featureType: "poi", //points of interest
+					stylers: [
+						{ hue: '#0044ff' }
+					]
+				}
+			];
+
+
+			var myOptions = {
+				zoom: 14,
+				center: latlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				disableDefaultUI: true,
+				styles: styles
+			};
+
+			map = new google.maps.Map(document.getElementById('map'), myOptions);
+		}
+	</script>
+</head>
+
+<body>
+
+	<div id="map"></div>
+
+</body>
+</html>
