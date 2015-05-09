@@ -29,7 +29,12 @@ header a {
 	font-size: 36px;
 }
 
-header a:hover {
+a {
+  text-decoration: underline;
+  color: #4a4a4a;
+}
+
+a:hover {
   color: #F2733F;
 }
 
@@ -41,8 +46,6 @@ header a:hover {
 	margin: 15px 60px 0px 0px;
 	overflow: hidden;
 	display: inline-block;
-
-
 }
 
 /* Grow */
@@ -63,11 +66,9 @@ header a:hover {
     transform: scale(1.1);
 }
 
-.social {
-	display: inline-block;
-	float: right;
-	overflow: hidden;
-	clear: both;
+#container {
+  width: 75%;
+  margin: 2% auto;
 }
 
 footer {
@@ -75,11 +76,11 @@ footer {
 	border-top: 1px solid #CCCCCC;
 	font-size: 11px;
 	width: 100%;
-  	display: block;
-  	margin: 0 auto;
-  	overflow: hidden;
-  	padding: 10px 10px 10px 20px;
-  	position: fixed;
-  	bottom: 0;
-  	z-index: 1;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 10px 10px 20px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
 }
